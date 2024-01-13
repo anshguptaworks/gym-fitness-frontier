@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
 import HText from "@/shared/HText";
 
-type Props = {
+interface ContactUsProps {
   setSelectedPage: (value: SelectedPage) => void;
-};
+}
 
-const ContactUs = ({ setSelectedPage }: Props) => {
+const ContactUs = ({ setSelectedPage }: ContactUsProps) => {
   const inputStyles = `w-full rounded-lg bg-primary300 outline-none text-white
   px-5 py-3 placeholder-white`;
 
