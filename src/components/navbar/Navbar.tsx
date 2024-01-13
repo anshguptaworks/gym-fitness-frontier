@@ -78,7 +78,10 @@ const Navbar = ({
                 key={key}
                 page={page}
                 selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
+                setSelectedPage={(value: SelectedPage) => {
+                  setSelectedPage(value);
+                  setIsMenuToggled(false);
+                }}
               />
             ))}
           </div>

@@ -3,31 +3,14 @@ import { SelectedPage } from "@/types/types";
 import ActionButton from "@/shared/ActionButton";
 import HomePageText from "@/assets/Images/HomePageText.png";
 import HomePageGraphic from "@/assets/Images/HomePageGraphic.png";
-import Nutritions from "@/assets/Images/Nutritions.png";
-import AnytimeFitness from "@/assets/Images/AnytimeFitness.png";
-import GoldenFitness from "@/assets/Images/GoldenFitness.png";
+
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
+import { sponsorConfig } from "./home.config";
 
 interface HomeProps {
   setSelectedPage: (value: SelectedPage) => void;
 }
-
-const sponsorConfig = [
-  {
-    image: Nutritions,
-    alt: "sponsor-1",
-  },
-
-  {
-    image: AnytimeFitness,
-    alt: "sponsor-3",
-  },
-  {
-    image: GoldenFitness,
-    alt: "sponsor-4",
-  },
-];
 
 const Home = ({ setSelectedPage }: HomeProps) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
