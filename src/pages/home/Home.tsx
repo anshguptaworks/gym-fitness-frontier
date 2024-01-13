@@ -33,7 +33,10 @@ const Home = ({ setSelectedPage }: HomeProps) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
   return (
-    <section id="home" className="gap-16 bg-gray20 md:h-full md:pb-0">
+    <section
+      id="home"
+      className="gap-16 overflow-hidden bg-gray20 md:h-full md:pb-0"
+    >
       <motion.div
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
